@@ -1,41 +1,47 @@
+<h1 class="mt-8 bg-gray-700 text-center text-white text-4xl">{{ titulo }}&nbsp;{{ autor }}</h1>
+
 <div class="min-h-screen bg-gray-700 flex items-center justify-center">
 
     <!-- calculator goes here -->
     <div class="bg-gray-800 border-2 border-gray-900 shadow-2xl rounded-lg">
       <!-- form goes here -->
       <form class="border-b-2 border-gray-900">
-        <input type="number" class="bg-transparent p-8 rounded-t-lg w-full outline-none focus:bg-gray-700 text-3xl text-right text-white font-mono" disabled>
+        <input value="{{pantalla}}" type="text" class="bg-transparent p-8 rounded-t-lg w-full outline-none focus:bg-gray-700 text-3xl text-right text-white font-mono" disabled>
       </form>
   
       <!-- buttons go here -->
       <div class="p-6 text-gray-800 grid grid-cols-5 gap-4 text-xl">
-        <button class="font-mono col-span-2 bg-red-500 hover:bg-red-400 rounded-full p-5">C</button>
-        <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">(</button>
-        <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">)</button>
+        <button (click)="resetear()" class="font-mono col-span-2 bg-red-500 hover:bg-red-400 rounded-full p-5">C</button>
+        <button (click)="operacion('(')" class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">(</button>
+        <button (click)="operacion(')')" class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">)</button>
         <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&Sqrt;</button>
   
-        <button class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">1</button>
-        <button class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">2</button>
-        <button class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">3</button>
-        <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&times;</button>
-        <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&divide;</button>
+        <button (click)="operacion('1')" class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">1</button>
+        <button (click)="operacion('2')" class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">2</button>
+        <button (click)="operacion('3')" class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">3</button>
+        <button (click)="operacion('*')" class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&times;</button>
+        <button (click)="operacion('/')" class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&divide;</button>
   
-        <button class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">4</button>
-        <button class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">5</button>
-        <button class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">6</button>
-        <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&minus;</button>
+        <button (click)="operacion('4')" class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">4</button>
+        <button (click)="operacion('5')" class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">5</button>
+        <button (click)="operacion('6')" class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">6</button>
+        <button (click)="operacion('-')" class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&minus;</button>
         <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">%</button>
         
-        <button class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">7</button>
-        <button class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">8</button>
-        <button class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">9</button>
-        <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&plus;</button>
+        <button (click)="operacion('7')" class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">7</button>
+        <button (click)="operacion('8')" class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">8</button>
+        <button (click)="operacion('9')" class="font-mono bg-gray-500 hover:bg-gray-400 text-white rounded-full p-5">9</button>
+        <button (click)="operacion('+')" class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&plus;</button>
         <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">log</button>
   
-        <button class="font-mono  bg-gray-500 col-span-2 text-white hover:bg-blue-400 rounded-full p-5">0</button>
-        <button class="font-mono bg-blue-500 hover:bg-blue-400 text-white rounded-full p-5">.</button>
-        <button class="font-mono bg-green-500 col-span-2 hover:bg-green-400 rounded-full p-5">&equals;</button>
+        <button (click)="operacion('0')" class="font-mono  bg-gray-500 col-span-2 text-white hover:bg-blue-400 rounded-full p-5">0</button>
+        <button (click)="operacion('.')" class="font-mono bg-blue-500 hover:bg-blue-400 text-white rounded-full p-5">.</button>
+        <button (click)="resultadoOperacion()" class="font-mono bg-green-500 col-span-2 hover:bg-green-400 rounded-full p-5">&equals;</button>
       </div>
     </div>
-  
+    
   </div>
+
+
+
+ 
