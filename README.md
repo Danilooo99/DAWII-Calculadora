@@ -16,7 +16,8 @@ Las funcionalidades de la calculadora son:
 - Permite realizar divisiones ```/```.
 - Permite realizar porcentajes ```%```.
 - Permite realizar operaciones haciendo uso de los paréntesis ```()```
-- Permite realizar operaciones aritméticas combinando todas las operaciones descritas anteriormente ```Z * (X + Y) + K / P - M * N%```.
+- Permite realizar operaciones con números decimales ```X.Y```
+- Permite realizar operaciones aritméticas combinando todas las operaciones descritas anteriormente ```Z * (X + Y) + K / P - M.J * N%```.
 - Permite resetear las operaciones escritas en la pantalla de la calculadora ```Botón: C```.
 - Permite borrar uno a uno los símbolos escritos en la pantallade la calculadora ```Botón: <--```
 - Controla los errores de sintaxis escritos o calculados a través de la calculadora ```Syntax Error```.
