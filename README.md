@@ -1,27 +1,46 @@
-# Prueba
+# DAW II - Calculadora que realiza operaciones ariméticas básicas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+### Autor del proyecto
 
-## Development server
+Danilo Rivero Pérez - Grado en Ingeniería Informática - DAW II.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Descripción de la app de la calculadora y sus funcionalidades.
 
-## Code scaffolding
+Se ha creado una calculadora que realiza una serie de operaciones aritméticas básicas. Para la creación de esta calculadora, se ha usado el poderoso Framework de JavaScript, [Angular](https://angular.io/). Para maquetar el diseño de esta calculadora, se ha usado la librería de diseño [TailwindCSS](https://tailwindcss.com/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Las funcionalidades de la calculadora son:
 
-## Build
+- Permite realizar sumas ```+```.
+- Permite realizar restas ```-```.
+- Permite realizar multiplicaciones ```*```.
+- Permite realizar divisiones ```/```.
+- Permite realizar porcentajes ```%```.
+- Permite realizar operaciones haciendo uso de los paréntesis ```()```
+- Permite realizar operaciones con números decimales ```X.Y```
+- Permite realizar operaciones aritméticas combinando todas las operaciones descritas anteriormente ```Z * (X + Y) + K / P - M.J * N%```.
+- Permite resetear las operaciones escritas en la pantalla de la calculadora ```Botón: C```.
+- Permite borrar uno a uno los símbolos escritos en la pantallade la calculadora ```Botón: <--```
+- Controla los errores de sintaxis escritos o calculados a través de la calculadora ```Syntax Error```.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Ejecutar el proyecto
 
-## Running unit tests
+Para ejecutar este proyecto en ***local*** se deben seguir los siguientes pasos:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  1. Ejecutar en la terminal desde la ruta del proyecto, el comando: ```mpm install``` para instalar todas las dependencias del proyecto en Angular.
+  2. Ejecutar desde la terminal, el servidor local con el comando: ```ng serve --open```
+  3. Se abrirá en un navegador el proyecto realizado a través de la URL ```localhost:nºpuerto```
+  
+### Hosting de alojamiento del proyecto
 
-## Running end-to-end tests
+Podrá ver el proyecto de la calculadora realizado [aquí](https://calculadora-dawii.netlify.app/).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Tecnologías utilizadas en el Proyecto
 
-## Further help
+| Tecnologías                                                           | Descripción                               |
+| --------------------------------------------------------------------- | ----------------------------------------- |
+| **[Angular](https://angular.io/)**                                    | Framework de JavaScript                   |
+| **[TypeScript](https://www.typescriptlang.org/)**                     | Superset de Javascript con tipado         |
+| **[TailwindCSS](https://tailwindcss.com/)**                           | Librería de diseño CSS                    |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
