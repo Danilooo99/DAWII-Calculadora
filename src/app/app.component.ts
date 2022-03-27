@@ -25,7 +25,7 @@ export class AppComponent {
     this.control=false;
     this.pantalla += numero;
     for(var i=0;i<this.pantalla.length;i++){
-      if(this.pantalla.charAt(0)==="*" || this.pantalla.charAt(0)==="+" || this.pantalla.charAt(0)==="/" || this.pantalla.charAt(0)==="%") {
+      if(this.pantalla.charAt(0)==="*" || this.pantalla.charAt(0)==="+" || this.pantalla.charAt(0)==="/" || this.pantalla.charAt(0)==="%" || this.pantalla.charAt(0)===".") {
         this.pantalla="0";
         break;
       } else {
