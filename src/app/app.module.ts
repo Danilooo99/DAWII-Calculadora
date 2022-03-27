@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-
+import { AutorComponent } from './autor/autor.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AutorComponent
   ],
   imports: [
     BrowserModule,
